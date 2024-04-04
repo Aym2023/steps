@@ -50,33 +50,22 @@ function handelNext () {
        </p>
 
     <div className="buttons">
-      <Button
-       backgroundColor="#7950f2"
-       color= "#fff"
-       onClick ={handelPrevious}
-       ><span>👈</span> Previous</Button>
-    
-    <Button
-       backgroundColor="#7950f2"
-       color= "#fff"
-       onClick ={handelNext}
-       >Next<span>👈</span></Button>
-
+      <button
+       style={{backgroundColor:"#7950f2", color: "#fff"}}
+       onClick = {handelPrevious}
+       >
+        previous
+        </button>
+      <button
+      style={{backgroundColor:"#7950f2", color: "#fff"}}
+      onClick = {handelNext}>
+      next
+        </button>
     </div>
+
     </div>
     )
     }
     </div>
   );
-}
-
-function Button({backgroundColor, color, onClick, children}) {
-    return (     
-    <button
-    style={{backgroundColor: backgroundColor, color: color}}
-    onClick= {onClick}
-    >
-     {children}
-     </button>
-);
 }
